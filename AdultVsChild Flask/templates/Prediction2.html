@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Favicons -->
+     <link href="static/Newfolder1/img/favicon.PNG" rel="icon">
+     <link href="static/Newfolder1/img/apple-touch-icon.PNG" rel="apple-touch-icon">
+
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="static/Newfolder1/css/style1.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+ <!-- ======= Header ======= -->
+ <header id="header" class="d-flex align-items-center">
+   <div class="container d-flex align-items-center justify-content-between">
+
+     <h1 class="logo"><a href="index.html"></a></h1>
+     <!-- Uncomment below if you prefer to use an image logo -->
+     <!-- <a href="index.html" class="logo"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+
+     <nav id="navbar" class="navbar">
+       <ul>
+         <li><a class="nav-link scrollto active" href="/" style="color:rgb(0,0,0)"><b>Home</b></a></li>
+      
+         <li><a class="nav-link scrollto active" href="/prediction" style="color:rgb(0,0,0)"><b>Services</b></a></li>
+       
+        </ul>
+  
+     </nav><!-- .navbar -->
+
+   </div>
+ </header><!-- End Header -->
+ 
+ 
+   <title>WellnessHubw </title>
+</head>
+<body>
+    <div class="container">
+        <header>Please fill your Details</header>
+
+        <form action="{{ url_for('prediction')}}"method="post">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="number" min=0 placeholder="Enter your age" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Sex</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>m</option>
+                                <option>f</option>
+                                
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ALB(Albumin Protein Level)gm/lit</label>
+                            <input type="number" min=0 max=50 placeholder="Enter value between 0-50" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ALP(Alkaline Phosphatase Enzyme)Unit/lit</label>
+                            <input type="number"  min=0 max=150 placeholder="Enter value between 0-150" required>
+                        </div>
+                        <div class="input-field">
+                            <label>ALT(Alanine Aminotransferase Enzyme)Unit/lit</label>
+                            <input type="number" min=0 max=100  placeholder="Enter value between 0-100" required>
+                        </div>
+
+
+                       
+
+                        <div class="input-field">
+                            <label>AST(Aspartate Aminotransferase Enzyme)Unit/lit</label>
+                            <input type="number" min=0 max=50 placeholder="Enter value between 0-50" required>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>BIL(Bilirubin pigment)mg/dL</label>
+                            <input type="number" min=0 max=50 placeholder="Enter value between 0-50" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CHE(Cholinesterase)</label>
+                            <input type="number" min=0 max=50  placeholder="Enter value between 0-50" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CHOL(Total Cholesterol)</label>
+                            <input type="number"  min=0 max=500 placeholder="Enter value between 0-500" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CREA(Creatinine)</label>
+                            <input type="number" min=0 max=200 placeholder="Enter value between 0-500" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>GGT(Gamma-Glutamyl Transferase)</label>
+                            <input type="number" min=0 max=100 placeholder="Enter value between 0-100" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>PROT(Total Protein)</label>
+                            <input type="number" min=0 max=500 placeholder="Enter value between 0-500" required>
+                        </div>
+                    </div>
+
+                    <button  type="submit">
+                        <span class="btn btn-success btn-lg">Predict</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+           
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="static/Newfolder1/js/script.js"></script>
+</body>
+</html>

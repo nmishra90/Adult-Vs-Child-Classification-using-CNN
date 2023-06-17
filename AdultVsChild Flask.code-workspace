@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "AdultVsChild Flask"
+		},
+		{
+			"path": "../SB_Project2/MicroOrganisms_CNN_Flask"
+		},
+		{
+			"path": "../SB_Project3/ImageCaptionGeneration_Flask"
+		}
+	],
+	"settings": {}
+}
